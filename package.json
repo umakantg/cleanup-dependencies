@@ -1,6 +1,6 @@
 {
   "name": "cleanup-dependencies",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "clean up unused dependencies",
   "main": "index.js",
   "scripts": {
