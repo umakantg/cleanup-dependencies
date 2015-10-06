@@ -13,6 +13,7 @@ to find and remove unused deps :
 
 # Example 
 
+<pre><code>
 package.json [BEFORE] :
 {
   "name": "some-node-component",
@@ -33,11 +34,15 @@ package.json [BEFORE] :
   ...
   ...
 }
+</code></pre>
 
+<pre><code>
 ==> $clean-deps 
 // will identify the dependencies that are actually used and only keep them. 
 // package.json will be automatically be updated as shown below.
+</code></pre>
 
+<pre><code>
 package.json [AFTER] :
 {
   "name": "some-node-component",
@@ -53,4 +58,5 @@ package.json [AFTER] :
   ...
   ...
 }
+</code></pre>
 
