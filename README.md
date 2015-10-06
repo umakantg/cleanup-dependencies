@@ -1,5 +1,5 @@
 # cleanup-dependencies
-cleanup un-used node dependencies
+"clean-deps" is a node CLI command to cleanup un-used node dependencies
 
 # Installation
 npm install cleanup-dependencies
@@ -11,5 +11,46 @@ to find and remove unused deps :
 1. CD into your project folder and
 2. execute "clean-deps"
 
-# Example
-Please check test folder.
+# Example 
+
+package.json [BEFORE] :
+{
+  "name": "some-node-component",
+  ...
+  ...
+  ...
+  "dependencies": {
+    "underscore": "*",
+    "array-uniq": "*",
+    "fs-extra": "*",
+    "jsonfile": "*",
+    "process": "*",
+    "jsonupdate" : "*",
+    "abcd" : "*",
+    "xyz" : "*"
+  },
+  ...
+  ...
+  ...
+}
+
+==> $clean-deps 
+// will identify the dependencies that are actually used and only keep them. 
+// package.json will be automatically be updated as shown below.
+
+package.json [AFTER] :
+{
+  "name": "some-node-component",
+  ...
+  ...
+  ...
+  "dependencies": {
+    "underscore": "*",
+    "fs-extra": "*",
+    "jsonfile": "*"
+  },
+  ...
+  ...
+  ...
+}
+

@@ -35,7 +35,11 @@ fs.readFile("./package.json", function(err, data) {
             if (file.indexOf("node_modules") > -1 ||
                 file.indexOf("package.json") > -1 ||
                 file.indexOf(".md") > -1 ||
-                file.indexOf(".log") > -1) {} else
+                file.indexOf(".log") > -1 || 
+                file.indexOf(".pid") > -1 ||
+                file.indexOf(".seed") > -1 ||
+                file.indexOf(".lock-wscript") > -1){} 
+            else
                 file_filtered_list.push(file);
         });
 

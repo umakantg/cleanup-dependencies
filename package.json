@@ -1,6 +1,6 @@
 {
   "name": "cleanup-dependencies",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "clean up unused dependencies",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,10 @@
     "fs-extra": "*",
     "jsonfile": "*",
     "process": "*"
-  }
+  },
+  "keywords": [
+    "nodecli","cli","package","package.json","dependency","command line",
+    "dependencies","trim","unused","clean","remove","delete","command","commandcli",
+    "command cli","node","modules","node_modules"
+  ]
 }
