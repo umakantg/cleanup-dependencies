@@ -20,6 +20,6 @@
     "array-uniq": "*",
     "fs-extra": "*",
     "jsonfile": "*",
-    "process":"*"
+    "process": "*"
   }
 }
